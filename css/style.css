@@ -1,0 +1,124 @@
+*{
+	box-sizing: border-box;
+	position: relative;
+
+}
+
+body{
+    font-family: trebuchet ms;
+    line-height: 1.6;
+    background-color:#3d5a80
+
+}
+
+ul{
+  list-style:none
+}
+
+/*<!-- 最外層 -->*/
+.wrapper{
+       background-image: url(../images/0712.jpg); 
+       width: 1400px;
+       height: 787px;
+       margin: 50px auto;
+       box-shadow: 0 20px 80px rgba(0,0,0,0.5);
+}
+
+/* <!-- 主選單 -->*/
+.nav{
+	position: relative;
+	float: right;
+	padding: 50px 130px 50px 0px;
+
+}
+
+.nav li{
+	float: left;
+	margin-left: 30px;
+
+
+
+}
+
+
+
+.nav a{
+	text-decoration: none; 
+	color: #d3d3d3;
+
+}
+
+.nav a:hover{
+	color: #bee3db;
+	text-decoration: underline;
+}
+
+/*<!-- 主內容 -->*/
+.container{
+	color: #d3d3d3;
+	/*清除浮動*/
+	clear: both;
+	float: right;
+	width: 500px;
+	margin-right: 30px;
+}
+
+.container h1{
+	font-size: 72pt;
+	font-weight: bold;
+
+    animation-name: color; /*動畫名稱-需與keyframe名稱相同*/
+    animation-duration: 4s; /*動畫持續時間*/
+    animation-delay: 2s;  /*動畫延遲時間*/
+    animation-iteration-count: infinite;  /*動畫次數*/
+}
+
+@keyframes color{
+	0%{color: #d3d3d3 ;}
+	100%{ color: #89b0ae; }
+
+	
+}
+
+.container h2{
+	font-size: 42PX;
+
+}
+
+.container p{
+    margin-bottom: 20px;
+}
+
+.container a{
+	display:block;
+	background-color: #d3d3d3;
+	width: 150px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	color: #003049;
+	border-radius: 50px;
+
+}
+
+.container a:hover{
+	color: #002137;
+	transition: .5s;
+	transform: scale(1.2);
+}
+
+/*<!-- 社群連結網站 -->*/ 
+
+.social-media{
+   position:absolute;
+   right: 30px;
+   bottom: 30px;
+   }
+
+.social-media li{
+   float: left;
+   margin-left: 30px;
+
+}
+
+
